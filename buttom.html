@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botão animado</title>
+    <style>
+      a {
+        position: relative;
+        padding: 10px 30px;
+        margin: 40px 0;
+        color: #21ebff;
+        text-decoration: none;
+        font-size: 50px;
+        text-transform: uppercase;
+        transition: 0.5s;
+        font-family: sans-serif;
+        border-radius: 16px;
+      }
+
+      a::before {
+        content: " ";
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid #21ebff;
+        border-left: 2px solid #21ebff;
+        transition: 0.5s;
+        transition-delay: 0.3s;
+      }
+
+      a::after {
+        content: " ";
+        position: absolute;
+        bottom: -1px;
+        right: -1px;
+        width: 10px;
+        height: 10px;
+        border-bottom: 2px solid #21ebff;
+        border-right: 2px solid #21ebff;
+        transition: 0.5s;
+        transition-delay: 0.3s;
+      }
+
+      a:hover::before,
+      a:hover::after {
+        width: 100%;
+        border-radius: 16px;
+        height: 100%;
+        transition-delay: 0s;
+      }
+
+      a:hover {
+        background: #21ebff;
+        color: #000000b2;
+        box-shadow: 0px 0px 15px 6px #21ebff;
+        transition-delay: 0.1s;
+      }
+
+      body {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: cadetblue;
+      }
+
+      div {
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <a href="#">Botão animado</a>
+    </div>
+  </body>
+</html>

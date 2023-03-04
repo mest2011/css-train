@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria interativa</title>
+    <style>
+      .galery {
+        display: flex;
+        height: 20rem;
+        gap: 1rem;
+      }
+
+      .galery > div {
+        flex: 1;
+        border-radius: 1rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        transition: all 0.6s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+      }
+
+      .galery > div:hover {
+        flex: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="galery">
+      <div
+        style="
+          background-image: url('https://thumbs.dreamstime.com/b/silhueta-de-uma-pessoa-sobre-paisagem-do-inverno-no-por-sol-que-olha-um-corpo-%C3%A1gua-cercado-pela-neve-110130597.jpg');
+        "
+      ></div>
+      <div
+        style="
+          background-image: url('https://img.freepik.com/fotos-premium/garota-no-campo-campo-verde-uma-pessoa-admira-a-natureza-paisagem-vida-no-campo_559654-565.jpg');
+        "
+      ></div>
+      <div
+        style="
+          background-image: url('https://thumbs.dreamstime.com/b/paisagem-fant%C3%A1stica-da-mola-com-uma-pessoa-na-estrada-134790320.jpg');
+        "
+      ></div>
+      <div
+        style="
+          background-image: url('https://static.vecteezy.com/ti/fotos-gratis/p1/4898547-homem-homem-fica-na-borda-e-olha-certo-para-nascer-do-sol-com-vista-paisagem-deslumbrante-da-reserva-natural-mijniskure-vashlovani-foto.jpg');
+        "
+      ></div>
+      <div
+        style="
+          background-image: url('https://c4.wallpaperflare.com/wallpaper/481/51/674/aprecio-o-por-do-sol-wallpaper-preview.jpg');
+        "
+      ></div>
+    </div>
+  </body>
+</html>
